@@ -1,0 +1,37 @@
+Sender: LSF System <lsfadmin@linuxbsc001>
+Subject: Job 21221739: <MTSS_ME> in cluster <rcc> Done
+
+Job <MTSS_ME> was submitted from host <cluster> by user <eg474423> in cluster <rcc>.
+Job was executed on host(s) <linuxbsc001>, in queue <normal>, as user <eg474423> in cluster <rcc>.
+</home/eg474423> was used as the home directory.
+</work/eg474423/eg474423_Projects/trunk/Mtss/Results/MotifMatching> was used as the working directory.
+Started at Tue Apr 21 17:37:40 2015
+Results reported on Tue Apr 21 17:38:48 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+./motifAnalysis_pipeline.zsh --matching --organism hg19 --fpr 0.0005 --precision 10000 --pseudocounts 0.1 --rand-proportion 1 --output-location /work/eg474423/eg474423_Projects/trunk/Mtss/Results/MotifMatching/Results_FDR_3.5/ /work/eg474423/eg474423_Projects/trunk/Mtss/Results/MotifMatching/exp_mat/exp_mat.txt
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   10.57 sec.
+    Max Memory :                                 62 MB
+    Average Memory :                             48.00 MB
+    Total Requested Memory :                     12000.00 MB
+    Delta Memory :                               11938.00 MB
+    Max Processes :                              5
+    Max Threads :                                6
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <MTSS_ME_err.txt> for stderr output of this job.
+

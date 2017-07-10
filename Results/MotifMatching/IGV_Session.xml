@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Session genome="hg19" hasGeneTrack="true" hasSequenceTrack="true" locus="chr8:125740869-125741103" version="8">
+    <Resources>
+        <Resource path="/home/ivan/projects/Mtss/Results/MotifMatching/Results_FDR_4/mpbs.bb"/>
+        <Resource path="/home/ivan/projects/Mtss/Results/IGV/Results/Methylation/Region1/Methylation_1.bed"/>
+    </Resources>
+    <Panel height="954" name="DataPanel" width="1836">
+        <Track altColor="0,0,178" autoScale="false" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="Reference sequence" name="Reference sequence" sortable="false" visible="true"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" colorScale="ContinuousColorScale;0.0;308.0;255,255,255;0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" height="35" id="hg19_genes" name="RefSeq Genes" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count">
+            <DataRange baseline="0.0" drawBaseline="true" flipAxis="false" maximum="308.0" minimum="0.0" type="LINEAR"/>
+        </Track>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="28000" fontSize="10" id="/home/ivan/projects/Mtss/Results/MotifMatching/Results_FDR_4/mpbs.bb" name="mpbs.bb" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+        <Track altColor="0,0,178" autoScale="false" clazz="org.broad.igv.track.FeatureTrack" color="0,0,178" displayMode="COLLAPSED" featureVisibilityWindow="-1" fontSize="10" id="/home/ivan/projects/Mtss/Results/IGV/Results/Methylation/Region1/Methylation_1.bed" name="Methylation_1.bed" renderer="BASIC_FEATURE" sortable="false" visible="true" windowFunction="count"/>
+    </Panel>
+    <PanelLayout dividerFractions="0.9906735751295337"/>
+    <Regions>
+        <Region chromosome="chr8" end="125741103" start="125740868"/>
+    </Regions>
+    <HiddenAttributes>
+        <Attribute name="NAME"/>
+        <Attribute name="DATA FILE"/>
+        <Attribute name="DATA TYPE"/>
+    </HiddenAttributes>
+</Session>
