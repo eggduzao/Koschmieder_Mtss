@@ -1,0 +1,42 @@
+
+# Import
+import sys
+from Bio import motifs
+from glob import glob
+from copy import deepcopy
+
+# Reading input
+inList = [ "./ZBT7B_M00405.pfm", "./MA0138.2.REST.pfm", "./MA0527.1.ZBTB33.pfm" ]
+
+# Execution
+for inFileName in inList:
+    inFile = open(inFileName,"r")
+    outFileName = inFileName[:-3]+"pdf"
+    pwm = motifs.read(inFile, "pfm")
+    
+    # Revert complement
+    #tempA = deepcopy(pwm.counts["A"][::-1])
+    #pwm.counts["A"] = pwm.counts["T"][::-1]
+    #pwm.counts["T"] = tempA
+    #tempC = deepcopy(pwm.counts["C"][::-1])
+    #pwm.counts["C"] = pwm.counts["G"][::-1]
+    #pwm.counts["G"] = tempC
+
+    # Complement
+    #tempA = deepcopy(pwm.counts["A"])
+    #pwm.counts["A"] = pwm.counts["T"]
+    #pwm.counts["T"] = tempA
+    #tempC = deepcopy(pwm.counts["C"])
+    #pwm.counts["C"] = pwm.counts["G"]
+    #pwm.counts["G"] = tempC
+
+    # Revert
+    pwm.counts["A"] = pwm.counts["A"][::-1]
+    pwm.counts["C"] = pwm.counts["C"][::-1]
+    pwm.counts["G"] = pwm.counts["G"][::-1]
+    pwm.counts["T"] = pwm.counts["T"][::-1]
+
+    pwm.weblogo(outFileName, format="PDF", color_scheme = "color_classic")
+    inFile.close()
+
+#weblogo -f /home/egg/Desktop/ZBT7B_M00405.pwm -D transfac -o /home/egg/Desktop/ZBT7B_M00405.eps -F eps
