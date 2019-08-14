@@ -1,2 +1,0 @@
-name	type	file
-big_region	regions	/work/eg474423/eg474423_Projects/trunk/Mtss/Results/MotifMatchingNew/input/big_region.bed
